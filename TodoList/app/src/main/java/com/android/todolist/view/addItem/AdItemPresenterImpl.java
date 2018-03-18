@@ -105,4 +105,9 @@ public class AdItemPresenterImpl implements AddItemPresenter {
             }
         }
     }
+
+    @Override
+    public void onDeleteClick(long itemId) {
+        itemView.showDeleteDialog(itemId);
+    }
 }

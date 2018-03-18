@@ -18,4 +18,5 @@ public interface AddItemView {
     void selectAndLoadImage();
     String fetchImagePathFromIntent(Intent data);
     void inflateImage(String imagePath);
+    void showDeleteDialog(long itemId);
 }

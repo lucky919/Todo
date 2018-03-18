@@ -1,6 +1,7 @@
 package com.android.todolist.view.addItem;
 
 import android.Manifest;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
@@ -8,6 +9,7 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
@@ -160,7 +162,8 @@ public class AddCategoryItemActivity extends AppCompatActivity implements AddIte
         switch (item.getItemId()) {
             case R.id.action_delete:
                 if (categoryItem != null) {
-                    presenter.deleteItem(categoryItem.getId());
+//                    presenter.deleteItem(categoryItem.getId());
+                    showDeleteDialog(categoryItem.getId());
                 }
                 break;
             case R.id.action_save:
@@ -278,5 +281,25 @@ public class AddCategoryItemActivity extends AppCompatActivity implements AddIte
             }
         }
         return null;
+    }
+
+    @Override
+    public void showDeleteDialog(final long itemId) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this)
+                .setMessage(R.string.msg_item_delete)
+                .setTitle(R.string.title_delete_item)
+                .setPositiveButton(R.string.label_button_yes, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                        presenter.deleteItem(itemId);
+                    }
+                }).setNegativeButton(R.string.label_button_no, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
+        builder.show();
     }
 }

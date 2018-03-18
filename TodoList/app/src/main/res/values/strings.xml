@@ -18,5 +18,9 @@
     <string name="change_photo">Change Photo</string>
     <string name="add_item">Add Item</string>
     <string name="edit_item">Edit Item</string>
-    <string name="msg_title_empty">Title can\'t be empty.</string>
+    <string name="msg_title_empty">Title can\'t be empty</string>
+    <string name="msg_item_delete">Are you sure, want to delete</string>
+    <string name="title_delete_item">Delete Item</string>
+    <string name="label_button_no">No</string>
+    <string name="label_button_yes">Yes</string>
 </resources>

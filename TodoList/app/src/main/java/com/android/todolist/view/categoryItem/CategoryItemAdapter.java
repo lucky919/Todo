@@ -10,8 +10,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.android.todolist.R;
-import com.android.todolist.utils.Util;
 import com.android.todolist.model.categoryItem.CategoryItemEntity;
+import com.android.todolist.utils.Util;
 import com.squareup.picasso.Picasso;
 
 import java.io.File;
@@ -74,6 +74,8 @@ public class CategoryItemAdapter extends RecyclerView.Adapter<CategoryItemAdapte
                     .fit().centerCrop()
                     .placeholder(android.R.color.darker_gray)
                     .into(holder.imageView);
+        } else {
+            holder.imageView.setImageResource(android.R.color.darker_gray);
         }
     }
 

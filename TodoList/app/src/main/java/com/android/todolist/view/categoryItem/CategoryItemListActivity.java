@@ -12,10 +12,10 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.android.todolist.R;
-import com.android.todolist.utils.Util;
 import com.android.todolist.data.DBHelper;
 import com.android.todolist.model.categoryItem.CategoryItemEntity;
 import com.android.todolist.model.categoryMap.CategoryMap;
+import com.android.todolist.utils.Util;
 import com.android.todolist.view.addItem.AddCategoryItemActivity;
 
 import java.util.List;

@@ -15,4 +15,5 @@ public interface AddItemPresenter {
     void uploadImage();
     void onStoragePermissionResponse(boolean result);
     void onImageSelectResponse(boolean result, Intent data);
+    void onDeleteClick(long itemId);
 }
