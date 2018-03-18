@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.android.todolist.R;
-import com.android.todolist.Utils.Util;
+import com.android.todolist.utils.Util;
 import com.android.todolist.model.categoryMap.CategoryMap;
 
 import java.util.ArrayList;

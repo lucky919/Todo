@@ -1,4 +1,4 @@
-package com.android.todolist.Utils;
+package com.android.todolist.utils;
 
 import android.content.Context;
 import android.graphics.BitmapFactory;

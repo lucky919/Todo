@@ -3,7 +3,7 @@ package com.android.todolist.view.categoryItem;
 import android.os.Bundle;
 
 import com.android.todolist.concurrency.AppExecutors;
-import com.android.todolist.Utils.Util;
+import com.android.todolist.utils.Util;
 import com.android.todolist.data.DBHelper;
 import com.android.todolist.model.categoryItem.CategoryItemEntity;
 

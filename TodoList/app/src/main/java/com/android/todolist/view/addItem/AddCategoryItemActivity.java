@@ -21,7 +21,7 @@ import android.widget.ImageView;
 import android.widget.Switch;
 
 import com.android.todolist.R;
-import com.android.todolist.Utils.Util;
+import com.android.todolist.utils.Util;
 import com.android.todolist.data.DBHelper;
 import com.android.todolist.model.category.CategoryEntity;
 import com.android.todolist.model.categoryItem.CategoryItemEntity;

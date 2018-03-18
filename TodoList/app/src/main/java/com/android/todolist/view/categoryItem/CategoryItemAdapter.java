@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.android.todolist.R;
-import com.android.todolist.Utils.Util;
+import com.android.todolist.utils.Util;
 import com.android.todolist.model.categoryItem.CategoryItemEntity;
 import com.squareup.picasso.Picasso;
 

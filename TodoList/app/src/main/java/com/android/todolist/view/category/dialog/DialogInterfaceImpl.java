@@ -3,7 +3,7 @@ package com.android.todolist.view.category.dialog;
 import android.text.TextUtils;
 
 import com.android.todolist.concurrency.AppExecutors;
-import com.android.todolist.Utils.Util;
+import com.android.todolist.utils.Util;
 import com.android.todolist.data.DBHelper;
 import com.android.todolist.model.category.CategoryEntity;
 
